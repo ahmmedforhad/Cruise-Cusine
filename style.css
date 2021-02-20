@@ -142,4 +142,5 @@ nav ul li a:hover, a.active{
     margin-left: 250px;
     background-color: black;
     padding: 40px;
+    overflow: hidden;
 }

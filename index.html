@@ -11,6 +11,8 @@
         rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body>
@@ -27,7 +29,8 @@
     </header>
 
     <!--Booking Section-->
-    <main >
+    <main>
+        
         <div id="hide" class="main-content container">
             <div class="booking-content">
                 <h1>Cruise Queen</h1>
@@ -111,9 +114,15 @@
                 <button id="book-now" class="btn-style">Book Now</button>
             </div>
         </div>
+        <div id="loading-spinner" class="d-flex justify-content-center mt-5 d-none">
+            <div class="spinner-border text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
         <div id="show">
             <h1>Your Ticket Has Been Confirmed Successfully.</h1><br>
-            <h3>You have Purchased <span id="buy-first">0</span> First Class Tickets and <span id="buy-second">0</span> Second Class Tickets.</h3>
+            <h3>You have Purchased <span id="buy-first">0</span> First Class Tickets and <span id="buy-second">0</span>
+                Second Class Tickets.</h3>
             <h3>Total Amount You Paid(Including 10% Vat):- $ <span id="final-amount">0</span>.</h3><br>
             <h1>Have a safe Journey.</h1>
         </div>

@@ -85,13 +85,14 @@ secondClassDecreaseButton.addEventListener('click', function () {
     }
 })
 document.getElementById('book-now').addEventListener('click',function(){
-    
+    toggleSpinner();
     const firstClassInputArea = document.getElementById('first-class-input-area');
     const secondClassInputArea = document.getElementById('second-class-input-area');
     if (firstClassInputArea.value == 0 && secondClassInputArea.value == 0) {
         alert("You Have to Buy Minimum One Ticket.");        
     }
     else{
+    
     document.getElementById('hide').style.display = 'none';
     const buyFirstClassTicket = document.getElementById('buy-first');
     buyFirstClassTicket.innerText = firstClassInputArea.value
@@ -100,7 +101,12 @@ document.getElementById('book-now').addEventListener('click',function(){
     const finalAmount = document.getElementById('final-amount');
     const total = document.getElementById('total');
     finalAmount.innerText = total.innerText;
-    document.getElementById('show').style.display = 'block'}
+    document.getElementById('show').style.display = 'block'};
+    toggleSpinner();
     
 })
 
+const toggleSpinner = () =>{
+    const spinner = document.getElementById('loading-spinner');
+    spinner.classList.toggle('d-none');
+}
